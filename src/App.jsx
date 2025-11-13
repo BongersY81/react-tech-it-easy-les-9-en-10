@@ -1,8 +1,8 @@
 import './App.css';
-
+import './constants/Total Tv Sales.jsx'
 function App() {
   return (
-    <h1>Begin hier met met maken van de applicatie!</h1>
+    <h1>Begin hier met het maken van de applicatie!</h1>
   )
 }
 
