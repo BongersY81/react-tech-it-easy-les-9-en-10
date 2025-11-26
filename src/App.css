@@ -7,3 +7,16 @@
 .total-purchased-products {
     color: blue;
 }
+
+.total-products-to-sell {
+    color: red;
+}
+
+.check {
+    width: 10px;
+    height:10Px;
+}
+
+.minus {
+
+}

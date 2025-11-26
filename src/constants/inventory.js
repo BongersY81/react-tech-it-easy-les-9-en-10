@@ -13,11 +13,11 @@ export const bestSellingTv = {
     options: [
         {
             name: "wifi",
-            applicable: true
+            applicable: true,
         },
         {
             name: "speech",
-            applicable: false
+            applicable: false,
         },
         {
             name: "hdr",
