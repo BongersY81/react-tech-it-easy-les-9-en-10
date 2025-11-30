@@ -8,7 +8,13 @@ import tvPrice from "./helpers/tvPrice.js";
 import tvScreenSize from "./helpers/tvScreenSize.js";
 import check from "./assets/check.png";
 import minus from "./assets/minus.png";
+import {showOutcomeInConsole} from './constants/oefenbestand.js';
+
 function App() {
+
+showOutcomeInConsole();
+
+
 
     function mostSoldFirst() {
         console.log("Meest verkocht eerst")
@@ -24,6 +30,7 @@ function App() {
     }
 
     return (
+
         <>
             <h1>Tech it easy dashboard!</h1>
             <article className="total-product-sales">
