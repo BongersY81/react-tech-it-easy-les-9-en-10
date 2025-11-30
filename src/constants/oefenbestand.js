@@ -54,13 +54,13 @@ console.log("deel 2 opdracht 1e");
      console.log(tvInformation);
 
 
-     const filterHasAmbilight = inventory.filter((inventory) => {
-     const hasAmbilight = inventory.options.name.find((inventory));
-         if (inventory.options.name"ambilight".apllicable.) {
-             return inventory;
-         }
-     });
-
+//      const filterHasAmbilight = inventory.filter((inventory) => {
+//      const hasAmbilight = inventory.options.name.find((inventory));
+//          if (inventory.options.name) {
+//              return inventory;
+//          }
+//      });
+// console.log("deel 2 opdracht 1f")
 
 
 

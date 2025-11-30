@@ -1,22 +1,55 @@
 
 
 .total-product-sales {
+    display: flex;
+    flex-direction: row;
     color: lawngreen;
+    background-color: darkolivegreen;
+    border-color: orangered;
+    width: 250px;
+    height: 200px;
 }
 
 .total-purchased-products {
-    color: blue;
+    display: flex;
+    flex-direction: row;
+    color :blue;
+    background-color: cyan;
+    border-color: black;
+    width: 250px;
+    height: 200px;
 }
 
 .total-products-to-sell {
-    color: red;
+    display: flex;
+    flex-direction: row;
+    color: darkred;
+    background-color: red;
+    border-color: blue;
+    width:250px;
+    height: 200px;
 }
 
-.check {
-    width: 10px;
-    height:10Px;
+.icons-row {
+    display: flex;
+    width: 15px;
+    height: 15px;
+    gap: 10px
 }
 
-.minus {
+.button-row {
+display: flex;
+    gap: 12px;
+}
 
+h3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }

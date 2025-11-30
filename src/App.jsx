@@ -9,11 +9,10 @@ import tvScreenSize from "./helpers/tvScreenSize.js";
 import check from "./assets/check.png";
 import minus from "./assets/minus.png";
 import {showOutcomeInConsole} from './constants/oefenbestand.js';
-
+// import tvBrands from "./helpers/tvBrands.js";
 function App() {
 
-showOutcomeInConsole();
-
+    showOutcomeInConsole();
 
 
     function mostSoldFirst() {
@@ -29,33 +28,51 @@ showOutcomeInConsole();
         console.log("Meest geschikt voor sport eerst")
     }
 
-    return (
+
+  return (
 
         <>
             <h1>Tech it easy dashboard!</h1>
+
             <article className="total-product-sales">
+                <h3>Aantal verkochte producten</h3>
                 <p>{totalProductsSales(inventory)} </p>
             </article>
+
             <article className="total-purchased-products">
+                <h3>Aantal ingekochte producten</h3>
                 <p>{totalPurchasedProducts(inventory)}</p>
+
             </article>
+
             <article className="total-products-to-sell">
+                <h3>Aantal te verkopen Producten</h3>
                 <p>{totalProductsToSell()}</p>
-                <p>Aantal te verkopen Producten</p>
             </article>
+
             <p>{productInformation()}</p>
-            <p>{tvPrice()}</p>
+            <p>{tvPrice(549)}</p>
             <p>{tvScreenSize()}</p>
 
+            <div className="icons-row">
             <img src={check} alt="check" className={check}/> wifi
             <img src={minus} alt="minus" className={minus}/> speech
             <img src={check} alt="check" className={check}/> hdr
             <img src={check} alt="check" className={check}/> bluethooth
             <img src={minus} alt="minus" className={minus}/> ambilight
-
+            </div>
+            <p></p>
+            <div className="buttons-row">
             <button type="button" onClick={mostSoldFirst}>Meest verkocht eerst</button>
             <button type="button" onClick={cheapestFirst}>Goedkoopste eerst</button>
             <button type="button" onClick={bestForSportsFirst}>Meest geschikt voor sport eerst</button>
+            </div>
+
+            {/*<ul>*/}
+            {/*{tvBrands(inventory).map((brand, index) => (*/}
+            {/*    <li key={index}>{brand}</li>*/}
+            {/*))}*/}
+            {/*</ul>*/}
         </>
     )
 
