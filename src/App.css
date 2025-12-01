@@ -32,6 +32,8 @@
 
 .icons-row {
     display: flex;
+    flex-direction: row;
+    text-align: center;
     width: 15px;
     height: 15px;
     gap: 10px
@@ -39,6 +41,7 @@
 
 .button-row {
 display: flex;
+    flex-direction: row;
     gap: 12px;
 }
 

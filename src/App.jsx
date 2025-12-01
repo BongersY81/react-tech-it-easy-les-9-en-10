@@ -61,7 +61,8 @@ function App() {
             <img src={check} alt="check" className={check}/> bluethooth
             <img src={minus} alt="minus" className={minus}/> ambilight
             </div>
-            <p></p>
+            <h2>Alle Tvs</h2>
+
             <div className="buttons-row">
             <button type="button" onClick={mostSoldFirst}>Meest verkocht eerst</button>
             <button type="button" onClick={cheapestFirst}>Goedkoopste eerst</button>
