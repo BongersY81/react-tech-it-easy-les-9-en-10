@@ -1,5 +1,5 @@
 import './App.css';
-import {inventory} from './constants/inventory.js';
+import {bestSellingTv, inventory} from './constants/inventory.js';
 import totalProductsSales from "./helpers/totalProductsSales.js";
 import totalPurchasedProducts from "./helpers/totalPurchasedProducts.js";
 import totalProductsToSell from "./helpers/totalProductsToSell.js";
@@ -9,10 +9,12 @@ import tvScreenSize from "./helpers/tvScreenSize.js";
 import check from "./assets/check.png";
 import minus from "./assets/minus.png";
 import {showOutcomeInConsole} from './constants/oefenbestand.js';
-// import tvBrands from "./helpers/tvBrands.js";
+
 function App() {
 
     showOutcomeInConsole();
+
+
 
 
     function mostSoldFirst() {
@@ -50,6 +52,9 @@ function App() {
                 <p>{totalProductsToSell()}</p>
             </article>
 
+            <p>Best verkochte tv</p>
+
+            <p>{bestSellingTv}</p>
             <p>{productInformation()}</p>
             <p>{tvPrice(549)}</p>
             <p>{tvScreenSize()}</p>
@@ -69,11 +74,32 @@ function App() {
             <button type="button" onClick={bestForSportsFirst}>Meest geschikt voor sport eerst</button>
             </div>
 
-            {/*<ul>*/}
-            {/*{tvBrands(inventory).map((brand, index) => (*/}
-            {/*    <li key={index}>{brand}</li>*/}
-            {/*))}*/}
-            {/*</ul>*/}
+            <ul>
+            {/*deel 2 opdracht 2a*/}
+                {inventory.map((tv, index) => {
+
+                    return <li key={index}>
+            {/*deel 2 opdracht 2b            */}
+                        <h3>{productInformation}{tv.brand} {tv.type} - {tv.name}</h3>
+                        <p>{tvPrice(tv.price)}</p>
+                        <h5>{tvScreenSize()}</h5>
+
+
+                    </li>
+
+
+                })}
+            </ul>
+
+
+
+
+
+
+
+
+
+
         </>
     )
 
