@@ -1,0 +1,58 @@
+
+
+.total-product-sales {
+    display: flex;
+    flex-direction: row;
+    color: lawngreen;
+    background-color: darkolivegreen;
+    border-color: orangered;
+    width: 250px;
+    height: 200px;
+}
+
+.total-purchased-products {
+    display: flex;
+    flex-direction: row;
+    color :blue;
+    background-color: cyan;
+    border-color: black;
+    width: 250px;
+    height: 200px;
+}
+
+.total-products-to-sell {
+    display: flex;
+    flex-direction: row;
+    color: darkred;
+    background-color: red;
+    border-color: blue;
+    width:250px;
+    height: 200px;
+}
+
+.icons-row {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    gap: 10px
+}
+
+.button-row {
+display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+h3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
